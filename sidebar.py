@@ -1,10 +1,11 @@
 import Xulyanhso.Main
 import streamlit as st
-
+import pages.NhanDienKhuonMat.Buoc3.predict as khuonmat
 import pages.NhanDangTraiCay.nhan_dang_trai_cay as traicay
 import pages.GiaiPTBac2.giai_phuong_trinh_bac_2 as gptb2
 import pages.NhanDangChuSoMNist.predict_gui as mnist
 import Xulyanhso
+
 
 
 logo_url = "images/logo.png"
@@ -80,7 +81,7 @@ elif st.session_state.page == "Giải phương trình bậc 2":
     gptb2.gptb2_page()
 elif st.session_state.page == "Nhận dạng khuôn mặt":
     st.title("Nhận dạng 3 khuôn mặt")
-    # khuonmat.nhan_dien()
+    khuonmat.nhan_dien()
 elif st.session_state.page == "Nhận dạng đối tượng":
     st.title("Nhận dạng đối tượng")
     # doituong.nhan_dang_doi_tuong_page()
